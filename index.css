@@ -2,6 +2,10 @@ body {
     font-family: 'Montserrat', sans-serif;
     color:hsl(232, 13%, 33%);
     text-align: center;
+    background-image: url(./images/bg-top.svg);
+    background-repeat: no-repeat;
+    background-position: right;
+    background-color: #F7F7FE;
 }
 
 p {
@@ -20,12 +24,17 @@ h1 {
 .card {
     width: 30%;
     height:auto;
-    border: 1px solid black;
+    border: none;
+    border-radius: 10px;
     text-align: center;
+    background-color: #FFFFFF;
 }
 
 hr {
-    width: 90%;
+    width: 80%;
+    background-color:hsl(234, 14%, 74%);
+    height: 1px;
+    border: 0;
 }
 
 button {
@@ -34,7 +43,7 @@ button {
     height: 35px;
     border: none;
     border-radius: 5px;
-    margin-bottom: 10px;
+    margin: 10px 0 10px 0;
     color: hsl(240, 78%, 98%);
     font-family: 'Montserrat', sans-serif;
     letter-spacing: 1px;
