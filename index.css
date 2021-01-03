@@ -30,16 +30,28 @@ h1 {
     background-color: #FFFFFF;
 }
 
-.card:hover {
+.center {
     transform: scaleY(1.1);
     transition-duration: 80ms;
     background-image: linear-gradient( to bottom, hsl(236, 72%, 79%) , hsl(237, 63%, 64%)) ;
     color:  hsl(240, 78%, 98%);
 }
 
-.card:hover button {
+button:hover {
+    color: hsl(237, 63%, 64%);
+    background:transparent;
+    border: 1px solid  hsl(237, 63%, 64%);
+}
+
+.center button {
     color: hsl(237, 63%, 64%);
     background-image: none;
+}
+
+.center button:hover {
+    color:  hsl(240, 78%, 98%);
+    background:transparent;
+    border: 1px solid hsl(240, 78%, 98%);
 }
 
 hr {
