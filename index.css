@@ -2,9 +2,8 @@ body {
     font-family: 'Montserrat', sans-serif;
     color:hsl(232, 13%, 33%);
     text-align: center;
-    background-image: url(./images/bg-top.svg);
-    background-repeat: no-repeat;
-    background-position: right;
+    background: url(./images/bg-top.svg) right top no-repeat,
+    url(./images/bg-bottom.svg) left bottom no-repeat;
     background-color: #F7F7FE;
 }
 
@@ -18,20 +17,32 @@ h1 {
 
 .card-list {
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
+    flex-wrap:wrap;
 }
 
 .card {
-    width: 30%;
-    height:auto;
+    width: 325px;
+    height: auto;
     border: none;
     border-radius: 10px;
     text-align: center;
     background-color: #FFFFFF;
 }
 
+.card:hover {
+    transform: scale(1.1);
+    background-image: linear-gradient( to bottom, hsl(236, 72%, 79%) , hsl(237, 63%, 64%)) ;
+    color:  hsl(240, 78%, 98%);
+}
+
+.card:hover button {
+    color: hsl(237, 63%, 64%);
+    background-image: none;
+}
+
 hr {
-    width: 80%;
+    width: 75%;
     background-color:hsl(234, 14%, 74%);
     height: 1px;
     border: 0;
@@ -39,11 +50,11 @@ hr {
 
 button {
     background-image: linear-gradient( to right, hsl(236, 72%, 79%) , hsl(237, 63%, 64%)) ;
-    width: 70%;
-    height: 35px;
+    width: 80%;
+    padding: 10px;
     border: none;
     border-radius: 5px;
-    margin: 10px 0 10px 0;
+    margin: 10px 0 15px 0;
     color: hsl(240, 78%, 98%);
     font-family: 'Montserrat', sans-serif;
     letter-spacing: 1px;
