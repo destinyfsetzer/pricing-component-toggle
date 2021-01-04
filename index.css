@@ -42,7 +42,6 @@ h1 {
 
 .center {
     transform: scaleY(1.1);
-    transition-duration: 80ms;
     background-image: linear-gradient( to bottom, hsl(236, 72%, 79%) , hsl(237, 63%, 64%)) ;
     color:  hsl(240, 78%, 98%);
 }
