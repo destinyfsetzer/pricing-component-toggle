@@ -6,7 +6,10 @@ body {
     url(./images/bg-bottom.svg) left bottom no-repeat;
     background-color: #F7F7FE;
     margin-top: 5%;
+    height: 100vh;
 }
+
+
 
 p {
     font-size: 15px;
