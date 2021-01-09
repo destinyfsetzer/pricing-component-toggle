@@ -5,11 +5,9 @@ body {
     background: url(./images/bg-top.svg) right top no-repeat,
     url(./images/bg-bottom.svg) left bottom no-repeat;
     background-color: #F7F7FE;
-    margin-top: 5%;
+    margin: 50px 0px 30px 0px;
     height: 100vh;
 }
-
-
 
 p {
     font-size: 15px;
@@ -41,12 +39,14 @@ h1 {
     border-radius: 10px;
     text-align: center;
     background-color: #FFFFFF;
+    box-shadow: 10px 10px 10px hsl(234, 14%, 74%);
 }
 
 .center {
     transform: scaleY(1.1);
     background-image: linear-gradient( to bottom, hsl(236, 72%, 79%) , hsl(237, 63%, 64%)) ;
     color:  hsl(240, 78%, 98%);
+    box-shadow: 10px 5px 10px hsl(234, 14%, 74%);
 }
 
 button:hover {
@@ -144,4 +144,19 @@ input:checked + .slider:before {
 
 .slider.round:before {
   border-radius: 50%;
+}
+
+@media screen and (max-width: 375px) {
+  .center {
+    transform: scaleY(1);
+    margin-bottom: 40px;
+}
+.card-list {
+    display: flex;
+    justify-content: center;
+    align-content: space-around;
+}
+.card {
+  margin-bottom: 40px;
+}
 }
