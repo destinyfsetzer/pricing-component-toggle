@@ -159,4 +159,8 @@ input:checked + .slider:before {
 .card {
   margin-bottom: 40px;
 }
+body {
+    
+    background: url(./images/bg-top.svg) right top no-repeat;
+}
 }
